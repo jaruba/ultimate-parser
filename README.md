@@ -25,6 +25,16 @@ parser('C:\\Downloads\\wow.avi').extension()
 parser('C:\\Downloads\\such.a.lovely.movie_2016.avi').name()
 // result: 'Such a lovely movie 2016'
 
+
+// Node.js implementation of atob / btoa
+
+parser('oh, hey there').btoa()
+// result: 'b2gsIGhleSB0aGVyZQ=='
+
+parser('b2gsIGhleSB0aGVyZQ==').atob()
+// result: 'oh, hey there'
+
+
 // TV Show specific parsing
 // supported tag types: 'S01E01', 'S01E01-E02', '01x01', '[01x01]', '[01 01]', 'season 1 episode 5', '105', '1005', '10005'
 
@@ -40,3 +50,5 @@ parser('C:\\Downloads\\such.a.nice.show.1021.avi').season()
 parser('C:\\Downloads\\such.a.nice.show.1021.avi').episode()
 // result: '21'
 ```
+
+`atob()` / `btoa()` credits go to [node-browser-compat](https://github.com/node-browser-compat)

@@ -49,6 +49,24 @@ var parser = function(path) {
         
         return path;
     }
+	
+	// atob / btoa credits go to:
+	// https://github.com/node-browser-compat
+	
+	function atob() {
+		return new Buffer(path, 'base64').toString('binary');
+	}
+	
+	function btoa() {
+		var buffer;
+	
+		if (path instanceof Buffer)
+		  buffer = path;
+		else
+		  buffer = new Buffer(path.toString(), 'binary');
+	
+		return buffer.toString('base64');
+	}
     
     function showName() {
         var path = this.filename();
