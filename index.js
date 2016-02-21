@@ -155,7 +155,7 @@ var parser = function(path) {
         return path.split("-").join(" ").split("[").join(" ").split("]").join(" ").split("(").join(" ").split(")").join(" ").split(",").join(" ").split("  ").join(" ").split("  ").join(" ").split("  ").join(" ").toLowerCase();
     };
 
-    return Object.freeze({ name: name, showName: showName, shortSzEp: shortSzEp, season: season, episode: episode, cleanName: cleanName, filename: filename, extension: extension, webize: webize, deWebize: deWebize, decodeURI: decodeURI });
+    return Object.freeze({ name: name, showName: showName, shortSzEp: shortSzEp, season: season, episode: episode, cleanName: cleanName, filename: filename, extension: extension, webize: webize, deWebize: deWebize, decodeURI: decodeURI, atob: atob, btoa: btoa });
 }
 
 module.exports = parser;
