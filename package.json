@@ -1,7 +1,7 @@
 {
   "name": "ultimate-parser",
   "description": "Various parsing utilities for Node.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Alexandru Branza",
     "url": "@jaruba"
